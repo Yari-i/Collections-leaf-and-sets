@@ -1,4 +1,4 @@
-package pro.sky.Listofemployeesdemo.Exceptions;
+package pro.sky.Listofemployeesdemo.exceptions;
 
 public class EmployeeAlreadyAddedException extends RuntimeException {
     public EmployeeAlreadyAddedException(String message) {

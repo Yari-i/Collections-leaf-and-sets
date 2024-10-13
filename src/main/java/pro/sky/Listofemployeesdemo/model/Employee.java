@@ -1,4 +1,4 @@
-package pro.sky.Listofemployeesdemo.Employee;
+package pro.sky.Listofemployeesdemo.model;
 
 import java.util.Objects;
 
@@ -25,7 +25,8 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Objects.equals(firstName, employee.firstName) && Objects.equals(LastName, employee.LastName);
+        return Objects.equals(firstName, employee.firstName) &&
+                Objects.equals(LastName, employee.LastName);
     }
 
     @Override

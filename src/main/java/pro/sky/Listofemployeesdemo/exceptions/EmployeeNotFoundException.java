@@ -1,4 +1,4 @@
-package pro.sky.Listofemployeesdemo.Exceptions;
+package pro.sky.Listofemployeesdemo.exceptions;
 
 public class EmployeeNotFoundException extends RuntimeException{
     public EmployeeNotFoundException(String message) {
