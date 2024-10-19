@@ -5,6 +5,7 @@ import pro.sky.Listofemployeesdemo.exceptions.EmployeeAlreadyAddedException;
 import pro.sky.Listofemployeesdemo.exceptions.EmployeeNotFoundException;
 import pro.sky.Listofemployeesdemo.exceptions.EmployeeStorageIsFullException;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface EmployeeService {
@@ -14,7 +15,7 @@ public interface EmployeeService {
             throws EmployeeNotFoundException;
     Employee findEmployee(String firstName, String lastName)
             throws EmployeeNotFoundException;
-    List<Employee> getAllEmployees();
+    Collection<Employee> getAllEmployees();
 
 
 }

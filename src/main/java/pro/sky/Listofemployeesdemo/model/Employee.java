@@ -5,11 +5,11 @@ import java.util.Objects;
 public class Employee {
 
     private final String firstName;
-    private final String LastName;
+    private final String lastName;
 
     public Employee(String firstName, String lastName) {
         this.firstName = firstName;
-        this.LastName = lastName;
+        this.lastName = lastName;
     }
 
     public String getFirstName() {
@@ -17,7 +17,11 @@ public class Employee {
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
+    }
+
+    public String getFullName() {
+        return firstName + " " + lastName;
     }
 
     @Override
@@ -26,19 +30,19 @@ public class Employee {
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
         return Objects.equals(firstName, employee.firstName) &&
-                Objects.equals(LastName, employee.LastName);
+                Objects.equals(lastName, employee.lastName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(firstName, LastName);
+        return Objects.hash(firstName, lastName);
     }
 
     @Override
     public String toString() {
         return "Employee{" +
                 "firstName='" + firstName + '\'' +
-                ", LastName='" + LastName + '\'' +
+                ", LastName='" + lastName + '\'' +
                 '}';
     }
 }
